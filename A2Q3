@@ -1,0 +1,30 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220, 100, 130);
+  
+  drawShape(-40, -30, 1.2);
+}
+
+function drawShape(x, y, Scale){
+  translate(x, y);
+  scale(Scale);
+  
+  
+  fill("lightblue")
+  beginShape();
+  vertex(50, 40);
+  vertex(350, 40);
+  vertex(350, 140);
+  vertex(300, 120);
+  vertex(300, 300);
+  vertex(150, 350);
+  vertex(150, 100);
+  vertex(80, 120);
+  
+  vertex(60, 60);
+  vertex(50, 90);
+  endShape();
+}
