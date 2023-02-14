@@ -1,0 +1,67 @@
+function setup() {
+  createCanvas(600, 400);
+}
+
+function draw() {
+  //Make rectangles in flag
+  background("blue");
+  fill("red")
+  rect(0, 280, 600, 15)
+  fill("white")
+  rect(0, 250, 600, 30)
+  rect(0, 295, 600, 30)
+  
+  
+  //6 small leaves
+  stroke("rgb(255,0,0)")
+  drawleaf(130, 200, 0.5, 0.8, 60, 1)
+  drawleaf(95, 215, 0.5, 1, 0, 1)
+  drawleaf(165, 215, 0.5, 1, 0, 1)
+  drawleaf(130, 350, 0.5, 0.8, 60, 1)
+  drawleaf(95, 335, 0.5, 1, 0, 1)
+  drawleaf(165, 335, 0.5, 1, 0, 1)
+   
+  //Big leaf
+  drawleaf(95, 45, 10, 0.4, 0, 0.8)
+}
+
+
+//Draw leaf funciton
+function drawleaf(x, y, LScale, opacity, color, stroke){
+  //Do colors, translation, scale
+  push();
+  translate(x, y);
+  scale(LScale);
+  strokeWeight(stroke);
+
+  fill("hsla(" + color + ", 100%, 50%," + opacity + ")")
+  
+  //Create Leaf Shape
+  beginShape();
+  vertex(50, 47);
+  vertex(50, 30);
+  vertex(40, 30);
+  vertex(30, 20)
+  vertex(35, 20)
+  vertex(30, 13);
+  vertex(40, 17);
+  vertex(40, 12);
+  vertex(45, 20)
+  vertex(45, 5);
+  vertex(47, 10)
+  vertex(50, -5)
+  vertex(53, 10)
+  vertex(55, 5)
+  vertex(55, 20)
+  vertex(63, 12);
+  vertex(62, 17);
+  vertex(69, 10)
+  vertex(64, 22)
+  vertex(72, 22)
+  vertex(65, 30)
+  vertex(53, 30)
+  vertex(52, 47)
+  endShape();
+  
+  pop()
+}
