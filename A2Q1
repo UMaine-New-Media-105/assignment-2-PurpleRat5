@@ -6,7 +6,7 @@ function draw() {
   //create background
   background(220);
   
-  //Draw 5 Rows
+  //Draw 5 Rows of squares
   fill("lightblue")
   drawRow(0);
   drawRow(80);
