@@ -1,18 +1,21 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 400);   
 }
 
 function draw() {
+  //Draw background
   background(220, 100, 130);
-  
+  //Call our Draw shape function
   drawShape(-40, -30, 1.2);
 }
 
+//DrawShape Function
 function drawShape(x, y, Scale){
+  //Translate and scale shape
   translate(x, y);
   scale(Scale);
   
-  
+  //Draw our shape
   fill("lightblue")
   beginShape();
   vertex(50, 40);
