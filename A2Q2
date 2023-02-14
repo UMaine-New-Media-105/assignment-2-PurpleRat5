@@ -1,12 +1,14 @@
+//Setup Function
 function setup() {
   createCanvas(400, 400);
 }
-
+//Draw Function
 function draw() {
-  background(220, 100, 130);
+  background(220, 100, 130);  //Set background to red
   
+  //Create the Shape
   fill("lightblue")
-  beginShape();
+  beginShape();     //begin Shape
   vertex(50, 40);
   vertex(350, 40);
   vertex(350, 140);
@@ -15,8 +17,7 @@ function draw() {
   vertex(150, 350);
   vertex(150, 100);
   vertex(80, 120);
-  
   vertex(60, 60);
   vertex(50, 90);
-  endShape();
+  endShape();       //End shape
 }
