@@ -3,8 +3,10 @@ function setup() {
 }
 
 function draw() {
+  //create background
   background(220);
   
+  //Draw 5 Rows
   fill("lightblue")
   drawRow(0);
   drawRow(80);
