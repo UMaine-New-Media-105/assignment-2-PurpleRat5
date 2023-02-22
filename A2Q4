@@ -1,7 +1,7 @@
 function setup() {
   createCanvas(600, 400);
 }
-
+//Draws my own flag, My initials are C.C. and I used the flags of Canada and Cape Verde, I enjoyed re-using the canadian leaf and figuring out the hsla function. 
 function draw() {
   //Make rectangles in flag
   background("blue");
